@@ -1,0 +1,567 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+:root {
+  --pri: #f8e5d1;
+  --sec: #4d281e;
+  --tri1: #bd8a00;
+  --tri2: #be8568;
+  --red: red;
+  --black: black;
+  --green: rgb(7, 153, 92);
+  --blue: rgb(43, 187, 231);
+}
+
+@font-face {
+  font-family: aeonik;
+  font-weight: 200;
+  src: url(./AeonikTRIAL-Light.otf);
+}
+@font-face {
+  font-family: aeonik;
+  font-weight: 500;
+  src: url(./AeonikTRIAL-Regular.otf);
+}
+@font-face {
+  font-family: aeonik;
+  font-weight: 700;
+  src: url(./AeonikTRIAL-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--pri);
+  font-family: aeonik;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 120%;
+  width: 100%;
+  background-color: var(--sec);
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  padding: 40px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+nav .nav-in {
+  background-color: var(--tri2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+nav .nav-in .theme {
+  background-color: var(--pri);
+  padding: 8px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  font-size: 20px;
+  color: var(--sec);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+nav .nav-in .theme:active {
+  scale: 0.92;
+}
+
+section.allElems {
+  height: auto;
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+}
+
+.allElems header {
+  background-image: url(./fav/header\ bg.avif);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: var(--tri2);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.header1 h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 20PX;
+}
+.header1 h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+}
+.header1 h3 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.header2 h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.header2 h4 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 20PX;
+}
+.header2 h3 {
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.allElems .allfeatures {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.elem {
+  border-radius: 10px;
+  height: 280px;
+  width: 230px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.863);
+}
+.elem :active {
+  scale: 0.97;
+  transition: all ease 0.2s;
+}
+.elem img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.elem h2 {
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.fullElem {
+  height: 100%;
+  width: 100%;
+  background-color: var(--sec);
+  padding: 40px;
+  display: none;
+  position: absolute;
+}
+.fullElem h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.fullElem .back {
+  position: absolute;
+  right: 5%;
+  padding: 10px;
+  background-color: var(--red);
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  font-weight: 700;
+  transition: all ease 0.2s;
+}
+.fullElem .back:active {
+  scale: 0.95;
+}
+.fullElem .back:hover {
+  opacity: 0.5;
+}
+
+.todo-list-fullpage .todo-container {
+  height: 80%;
+  width: 100%;
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-list-fullpage .todo-container .addtask {
+  height: 100%;
+  width: 33%;
+  background-color: var(--tri2);
+  border-radius: 15px;
+}
+.todo-list-fullpage .todo-container .addtask form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+.todo-list-fullpage .todo-container .addtask form input#task-input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--pri);
+  color: var(--sec);
+  outline: none;
+  margin-bottom: 1vw;
+}
+.todo-list-fullpage .todo-container .addtask form textarea {
+  width: 100%;
+  height: 17vw;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--pri);
+  color: var(--sec);
+  outline: none;
+  margin-bottom: 1vw;
+}
+.todo-list-fullpage .todo-container .addtask form #mark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  margin-bottom: 1vw;
+  width: 100%;
+  font-size: 18px;
+}
+.todo-list-fullpage .todo-container .addtask form #mark input {
+  scale: 1.5;
+}
+.todo-list-fullpage .todo-container .addtask form button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--tri1);
+  outline: none;
+  margin-bottom: 1vw;
+  transition: all linear 0.2s;
+}
+.todo-list-fullpage .todo-container .addtask form button:active {
+  scale: 0.96;
+}
+.todo-list-fullpage .todo-container .alltask {
+  height: 100%;
+  width: 65%;
+  background-color: var(--tri2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.todo-list-fullpage .todo-container .alltask .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--pri);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 1vw;
+}
+.todo-list-fullpage .todo-container .alltask .task .task-detasls {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.todo-list-fullpage .todo-container .alltask .task h6 {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 13px;
+}
+.todo-list-fullpage .todo-container .alltask .task h4 {
+  font-size: 30px;
+  color: var(--sec);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+.todo-list-fullpage .todo-container .alltask .task h4 span {
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: var(--red);
+}
+.todo-list-fullpage .todo-container .alltask .task h4 span.true {
+  opacity: 1;
+}
+.todo-list-fullpage .todo-container .alltask .task h4 span.false {
+  opacity: 0;
+}
+.todo-list-fullpage .todo-container .alltask .task button {
+  padding: 10px 20px;
+  color: var(--pri);
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+  transition: all linear 0.2s;
+}
+.todo-list-fullpage .todo-container .alltask .task button:active {
+  scale: 0.96;
+}
+
+.daily-plan-fullpage .daily-planner {
+  height: 85%;
+  width: 100%;
+  margin-top: 30px;
+  background-color: var(--tri2);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.daily-plan-fullpage .daily-planner .daily-planner-time {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+  width: 49%;
+}
+.daily-plan-fullpage .daily-planner .daily-planner-time input {
+  padding: 15px 40px;
+  font-size: 25px;
+  background-color: var(--sec);
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-top: 30px;
+}
+.daily-plan-fullpage .daily-planner .daily-planner-time p {
+  color: var(--tri1);
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  font-size: 17px;
+}
+
+.Motivation-fullpage {
+  position: relative;
+}
+.Motivation-fullpage .motivation-container {
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+.Motivation-fullpage .motivation-container .container-wraper {
+  width: 700px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 30px;
+  background-color: var(--tri1);
+}
+.Motivation-fullpage .motivation-container::after {
+  content: "";
+  height: 400px;
+  width: 700px;
+  scale: 1.13;
+  border-radius: 50px;
+  position: absolute;
+  background-color: var(--tri1);
+  filter: blur(150px);
+  z-index: 8;
+}
+.Motivation-fullpage .container-wraper {
+  box-shadow: 0 0 20px var(--tri2);
+  padding: 14px;
+  position: relative;
+}
+.Motivation-fullpage .container-wraper img {
+  position: absolute;
+  right: 5%;
+  top: 7%;
+  height: 80px;
+  opacity: 0.3;
+}
+.Motivation-fullpage .container-wraper .motive1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.Motivation-fullpage .container-wraper .motive1 h2 {
+  font-weight: 500;
+  background-color: var(--sec);
+  border-radius: 20px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+.Motivation-fullpage .container-wraper .motive2 {
+  margin-top: 15px;
+  padding: 10px;
+}
+.Motivation-fullpage .container-wraper .motive2 h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--sec);
+  line-height: 1;
+}
+.Motivation-fullpage .container-wraper .motive3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.Motivation-fullpage .container-wraper .motive3 h2 {
+  font-weight: 500;
+  background-color: var(--sec);
+  border-radius: 20px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+
+.Promodoro-fullpage {
+  position: relative;
+}
+.Promodoro-fullpage h2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: var(--green);
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.Promodoro-fullpage h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+.Promodoro-fullpage .pomo-timer {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Promodoro-fullpage .pomo-timer h1 {
+  font-size: 150px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.Promodoro-fullpage .pomo-timer button {
+  padding: 15px 40px;
+  background-color: var(--tri2);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 5px;
+  transition: all ease 0.2s;
+  font-weight: 700;
+}
+.Promodoro-fullpage .pomo-timer button:active {
+  scale: 0.97;
+}
+
+.daily-goals-fullpage #input {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 20px;
+}
+.daily-goals-fullpage #input #goalInput {
+  padding: 10px 40px;
+  font-size: 20px;
+  width: 65%;
+  border-radius: 10px;
+  outline: none;
+  color: var(--sec);
+  border: none;
+}
+.daily-goals-fullpage #input button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 25%;
+  color: var(--sec);
+  background-color: var(--tri1);
+  font-size: 20px;
+  transition: all ease 0.2s;
+}
+.daily-goals-fullpage #input button:active {
+  scale: 0.92;
+}
+.daily-goals-fullpage ul {
+  list-style: none;
+  padding: 10px;
+}
+.daily-goals-fullpage li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.daily-goals-fullpage li span {
+  cursor: pointer;
+  font-size: 25px;
+}
+.daily-goals-fullpage li button {
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  transition: all ease 0.2s;
+}
+.daily-goals-fullpage li button:active {
+  scale: 0.92;
+}
+.daily-goals-fullpage .done {
+  text-decoration: line-through;
+  color: gray;
+}

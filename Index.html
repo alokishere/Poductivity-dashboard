@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procutivity Dashboard</title>
+    <link rel="shortcut icon" href="./fav/fav.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <div class="nav-in">
+                <h1>Productivity Dashboard</h1>
+                <div class="theme">Change theme</div>
+            </div>
+        </nav>
+        <section class="allElems">
+
+            <header>
+                <div class="header1">
+                    <h2></h2>
+                    <h1></h1>
+                   <h3>Lucknow (UP)</h3>
+                </div>
+
+                <div class="header2">
+                    <h1>20°C</h1>
+                    <h4> Partly Cloudy</h4>
+                    <h3 class="heatIndex">Head Index: 15%</h3>
+                    <h3 class="humidity">Humidity: 50%</h3>
+                    <h3 class="wind">Wind: 10 km/h</h3>
+                </div>
+            </header>
+
+            <div class="allfeatures">
+                <div class="todo elem" id="0">
+                    <img src="./fav/to do img.png"
+                        alt="">
+                    <h2> To do list <h2></h2>
+                </div>
+                <div class="daily elem" id="1">
+                    <img src="./fav/daily panner.webp"
+                        alt="">
+                    <h2> Daily planner <h2></h2>
+                </div>
+                <div class="moti elem" id="2">
+                    <img src="./fav/motivation.jpg"
+                        alt="">
+                    <h2> Motivation <h2></h2>
+                </div>
+                <div class="pomo elem" id="3">
+                    <img src="fav/pomodorotimer.png"
+                        alt="">
+                    <h2>Pomodoro Timer <h2></h2>
+                </div>
+                <div class="goals elem" id="4">
+                    <img src="./fav/daily goal.png"
+                        alt="">
+                    <h2> Daily goals <h2></h2>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="fullElem todo-list-fullpage">
+            <button class="back" id="0"><i class="ri-close-large-line"></i></button>
+            <h1>Your Prasonalized Task List</h1>
+            <div class="todo-container">
+                <div class="addtask">
+                    <form>
+                        <input type="text" placeholder="Enter task" id="task-input">
+                        <textarea name="" placeholder="Enter details" id=""></textarea>
+                        <div id="mark">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check">Mark as important!</label>
+                        </div>
+                        <button>Add Task</button>
+                    </form>
+                </div>
+                <div class="alltask">
+
+                </div>
+            </div>
+        </section>
+        <section class="fullElem daily-plan-fullpage">
+            <button class="back" id="1"><i class="ri-close-large-line"></i></button>
+            <h1>Daily plan</h1>
+
+
+            <div class="daily-planner">
+
+            </div>
+
+
+
+        </section>
+        <section class="fullElem Motivation-fullpage">
+            <button class="back" id="2"><i class="ri-close-large-line"></i></button>
+            <div class="motivation-container">
+                <div class="container-wraper">
+                    <img src="./quote.png" alt="">
+                    <div class="motive1">
+                        <h2>Quote of the day</h2>
+                    </div>
+                    <div class="motive2">
+                        <h1></h1>
+                    </div>
+                    <div class="motive3">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullElem Promodoro-fullpage">
+            <button class="back" id="3"><i class="ri-close-large-line"></i></button>
+            <h1>Study with me!</h1>
+            <h2>Work session</h2>
+            <div class="pomo-timer">
+                <h1 class="timer">25:00</h1>
+                <button class="start">Start</button>
+                <button class="pause">Pause</button>
+                <button class="reset">Reset</button>
+            </div>
+
+        </section>
+        <section class="fullElem daily-goals-fullpage">
+            <button class="back" id="4"><i class="ri-close-large-line"></i></button>
+            
+            <h1>📝 Daily Goals</h1>
+
+            <div id="input">
+  <input type="text" id="goalInput" placeholder="Enter your goal" />
+  <button id="btn" onclick="addGoal()">Add Goal</button>
+            </div>
+
+
+  <ul id="goalList"></ul>
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
