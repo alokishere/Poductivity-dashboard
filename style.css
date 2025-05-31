@@ -42,6 +42,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: var(--sec);
 }
 
 #main {
@@ -564,4 +565,281 @@ section.allElems {
 .daily-goals-fullpage .done {
   text-decoration: line-through;
   color: gray;
+}
+
+@media (max-width: 600px) {
+  #main {
+    height: 127%;
+    width: 100%;
+    background-color: var(--sec);
+  }
+  nav {
+    width: 100%;
+    height: 40px;
+    padding: 40px;
+    margin-bottom: 10px;
+  }
+  nav .nav-in .theme {
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+  }
+  nav .nav-in h1 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .allElems header {
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .header1 h1 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .header1 h2 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .header1 h3 {
+    font-size: 20px;
+  }
+  .header2 h1 {
+    font-size: 30px;
+  }
+  .header2 h4 {
+    font-size: 18px;
+    margin-bottom: 20PX;
+  }
+  .header2 h3 {
+    font-size: 15px;
+    opacity: 0.8;
+  }
+  .elem {
+    border-radius: 10px;
+    height: 180px;
+    width: 130px;
+  }
+  .elem h2 {
+    font-size: 15px;
+  }
+  .fullElem {
+    height: 130%;
+    padding: 20px;
+  }
+  .fullElem h1 {
+    font-size: 30px;
+  }
+  .fullElem .back {
+    font-size: 15px;
+  }
+  .todo-list-fullpage {
+    margin-top: 30px;
+  }
+  .todo-list-fullpage .todo-container {
+    width: 100%;
+    margin-top: 3vw;
+    flex-direction: column;
+  }
+  .todo-list-fullpage .todo-container .addtask {
+    height: 30%;
+    width: 100%;
+    background-color: var(--tri2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+  }
+  .todo-list-fullpage .todo-container .addtask form {
+    width: 100%;
+  }
+  .todo-list-fullpage .todo-container .addtask form input#task-input {
+    font-size: 18px;
+    margin-bottom: 1.5vw;
+  }
+  .todo-list-fullpage .todo-container .addtask form textarea {
+    height: 15vw;
+    font-size: 18px;
+    margin-bottom: 1.3vw;
+  }
+  .todo-list-fullpage .todo-container .addtask form #mark {
+    gap: 3vw;
+    font-size: 15px;
+  }
+  .todo-list-fullpage .todo-container .addtask form #mark input {
+    scale: 1.2;
+  }
+  .todo-list-fullpage .todo-container .alltask {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+  }
+  .todo-list-fullpage .todo-container .alltask .task {
+    padding: 10px;
+    margin-bottom: 1.2vw;
+  }
+  .todo-list-fullpage .todo-container .alltask .task h6 {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .todo-list-fullpage .todo-container .alltask .task h4 {
+    font-size: 20px;
+    flex-direction: row;
+  }
+  .todo-list-fullpage .todo-container .alltask .task button {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+  }
+  .daily-plan-fullpage {
+    margin-top: 30px;
+  }
+  .daily-plan-fullpage .daily-planner {
+    width: 100%;
+    padding: 20px;
+  }
+  .daily-plan-fullpage .daily-planner .daily-planner-time {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .daily-plan-fullpage .daily-planner .daily-planner-time input {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  .daily-plan-fullpage .daily-planner .daily-planner-time p {
+    top: 10%;
+    left: 30%;
+    font-size: 15px;
+  }
+  .Motivation-fullpage {
+    height: 110vh;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .Motivation-fullpage .motivation-container {
+    padding: 0 20px;
+    height: 200px;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    border-radius: 20px;
+  }
+  .Motivation-fullpage .motivation-container .container-wraper {
+    width: 80%;
+    position: absolute;
+    z-index: 10;
+    border-radius: 30px;
+    background-color: var(--tri1);
+  }
+  .Motivation-fullpage .motivation-container::after {
+    content: "";
+    height: 200px;
+    width: 80%;
+  }
+  .Motivation-fullpage .container-wraper {
+    box-shadow: 0 0 20px var(--tri2);
+    padding: 14px;
+    position: relative;
+  }
+  .Motivation-fullpage .container-wraper img {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    height: 30px;
+    opacity: 0.3;
+  }
+  .Motivation-fullpage .container-wraper .motive1 h2 {
+    font-size: 10px;
+  }
+  .Motivation-fullpage .container-wraper .motive2 {
+    margin-top: 15px;
+    padding: 10px;
+  }
+  .Motivation-fullpage .container-wraper .motive2 h1 {
+    font-size: 20px;
+  }
+  .Motivation-fullpage .container-wraper .motive3 h2 {
+    font-size: 10px;
+  }
+  .Promodoro-fullpage {
+    position: relative;
+    margin-top: 40px;
+    height: 110vh;
+  }
+  .Promodoro-fullpage h2 {
+    top: 28%;
+    font-size: 25px;
+    width: 80%;
+    text-align: center;
+  }
+  .Promodoro-fullpage h1 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .Promodoro-fullpage .pomo-timer {
+    top: 50%;
+  }
+  .Promodoro-fullpage .pomo-timer h1 {
+    font-size: 100px;
+  }
+  .Promodoro-fullpage .pomo-timer button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 8px;
+  }
+  .daily-goals-fullpage {
+    margin-top: 40px;
+  }
+  .daily-goals-fullpage #input {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .daily-goals-fullpage #input #goalInput {
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 65%;
+    border-radius: 10px;
+    outline: none;
+    color: var(--sec);
+    border: none;
+  }
+  .daily-goals-fullpage #input button {
+    padding: 10px 0;
+    width: 30%;
+    font-size: 20px;
+    transition: all ease 0.2s;
+  }
+}
+@media (min-width: 600px) and (max-width: 820px) {
+  .allElems header {
+    height: 300px;
+  }
+  .header1 h1 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+  .header1 h2 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .header1 h3 {
+    font-size: 25px;
+  }
+  .header2 h1 {
+    font-size: 50px;
+  }
+  .header2 h4 {
+    font-size: 30px;
+    margin-bottom: 20PX;
+  }
+  .header2 h3 {
+    font-size: 20px;
+    opacity: 0.8;
+  }
 }

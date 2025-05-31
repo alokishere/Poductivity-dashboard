@@ -8,6 +8,7 @@ function openFeatures() {
         elem.addEventListener("click", function () {
             // console.log(elem.id);
             fullElem[elem.id].style.display = "block";
+            
         })
     })
 
@@ -46,7 +47,7 @@ function todoList() {
                             <h4>${elem.task} <span class =${elem.imp}> imp</span></h4>
                             <h6>${elem.details}</h6>
                             </div>
-                            <button id =${idx} >Mark as completed</button>
+                            <button id =${idx} ><i class="ri-close-large-fill"></i></button>
                         </div>`
         })
 
@@ -241,9 +242,9 @@ function weather() {
         let minutes = date.getMinutes()
         let seconds = date.getSeconds()
         if (hours > 12) {
-            dayTime.innerHTML = `${dayOfWeek[date.getDay()]}, ${(hours - 12).toString().padStart(2, 0)}:${minutes.toString().padStart(2, 0)}:${seconds.toString().padStart(2, 0)} PM`
+            dayTime.innerHTML = `${dayOfWeek[date.getDay()]}, <br> ${(hours - 12).toString().padStart(2, 0)}:${minutes.toString().padStart(2, 0)}:${seconds.toString().padStart(2, 0)} PM`
         } else {
-            dayTime.innerHTML = `${dayOfWeek[date.getDay()]}, ${(hours).toString().padStart(2, 0)}:${minutes.toString().padStart(2, 0)}:${seconds.toString().padStart(2, 0)} AM`
+            dayTime.innerHTML = `${dayOfWeek[date.getDay()]},<br> ${(hours).toString().padStart(2, 0)}:${minutes.toString().padStart(2, 0)}:${seconds.toString().padStart(2, 0)} AM`
         }
         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         let day = date.getDate()
